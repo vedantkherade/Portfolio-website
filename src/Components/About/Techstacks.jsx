@@ -25,6 +25,7 @@ export const Techstacks = () => {
         <h2 className="section__title different">Skills</h2>
         <div className="techsection">
          
+         
           <div>
             <SiHtml5 />
             <h5>HTML</h5>
