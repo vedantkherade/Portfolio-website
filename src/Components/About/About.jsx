@@ -54,7 +54,7 @@ export const About = () => {
             <PhoneIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/vedant-kherade-9882802a3/"
+            href="https://www.linkedin.com/in/vedantkherade/"
             aria-label="linkedin"
             className="link link--icon"
             target="_blank"
@@ -77,7 +77,7 @@ export const About = () => {
           className="btnResume"
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1n8QK14TPbHu8rqbbvcLqXpvgdRLN6l-s/view?usp=sharing"
+              "https://vedantkherade.github.io/resume/cv.pdf"
             );
           }}
         >

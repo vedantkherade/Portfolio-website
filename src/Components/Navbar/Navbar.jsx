@@ -71,7 +71,7 @@ export const Navbar = () => {
           </li>
           <li className="nav__list-item">
             <a
-              href="https://drive.google.com/file/d/1n8QK14TPbHu8rqbbvcLqXpvgdRLN6l-s/view?usp=sharing"
+              href="https://vedantkherade.github.io/resume/cv.pdf"
               onClick={toggleNavList}
               className="link link--nav"
               target="_blank"

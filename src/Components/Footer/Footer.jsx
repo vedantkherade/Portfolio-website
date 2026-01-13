@@ -9,7 +9,7 @@ export const Footer = () => {
     <div className={"section " + themename}>
       <div className="footerBox">
         <h3 className="footer">
-          © 2024 Vedant Kherade | All Rights Reserved
+          © 2026 Vedant Kherade | All Rights Reserved
         </h3>
       </div>
     </div>

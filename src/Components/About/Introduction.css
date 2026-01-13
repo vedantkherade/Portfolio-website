@@ -9,25 +9,33 @@
   color: var(--clr-primary);
 }
 
+/* Image container */
 .introduction_logocontainer {
   flex-basis: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+/* ✅ FIXED IMAGE STYLING */
 .introduction_logocontainer > img {
   width: 55%;
-  height: 85%;
-  border-radius: 10%;
-  border: 2px solid var(--clr-primary);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  height: auto;
+  border: none;                 /* no border */
+  border-radius: 10%;             /* ✅ REMOVE OVAL */
+  background: transparent;      /* no bg */   
+  border: 2px solid var(--clr-primary);         /* no shadow */
+  object-fit: contain;          /* ✅ prevents forced cropping */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect */
 .introduction_logocontainer > img:hover {
-  transform: scale(1.05); /* Slightly enlarge the image */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for highlight effect */
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Text content */
 .introduction_datacontainer {
   flex-basis: 55%;
 }
@@ -47,6 +55,7 @@
   margin-top: 0.5em;
 }
 
+/* Icons */
 .icons {
   position: relative;
   top: 5px;
@@ -54,28 +63,23 @@
   margin-right: 0.5em;
 }
 
+/* Responsive */
 @media (max-width: 1022px) {
   .introduction {
     flex-direction: column;
     margin-top: 2em;
   }
-  
+
   .introduction_logocontainer {
     margin-bottom: 3em;
     flex-basis: 30%;
   }
-  
+
   .introduction_logocontainer > img {
     width: 60%;
-    height: 100%;
-    border-radius: 20px;  
-    border-radius: 50%;
-    border: 2px solid var(--clr-primary);
-  }
-  
-  .introduction_logocontainer > img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    height: auto;
+    border-radius: 10%;           /* ✅ keep natural shape */
+    object-fit: contain;
   }
 
   .introduction_datacontainer {

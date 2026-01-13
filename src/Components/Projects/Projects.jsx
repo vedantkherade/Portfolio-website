@@ -3,6 +3,7 @@ import "./Projects.css";
 import weather_img from "../../assets/weather-app.png";
 import education_img from "../../assets/education-website.png";
 import spotify_img from "../../assets/spotify-clone.png";
+import FinTrackr from "../../assets/FinTrackr.png";
 import { FaReact, FaHardHat } from "react-icons/fa";
 import {
   SiBlockchaindotcom,
@@ -19,6 +20,8 @@ import {
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
+  SiAntdesign,
+  SiFirebase,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { VscJson } from "react-icons/vsc";
@@ -29,6 +32,53 @@ export const Projects = () => {
       <div className="section">
         <h2 className="section__title different">Projects</h2>
         <div className="allProjects">
+
+          <div className="projects_container" data-aos="fade-right">
+            <div className="project">
+              <div className="project_videocontainer">
+                <div>
+                  <img
+                    src={FinTrackr}
+                    alt="FinTrackr-img"
+                  />
+                </div>
+              </div>
+              <div className="project_information">
+                <h2>FinTrackr</h2>
+                <p>
+                   FinTrackr is a user-friendly personal finance management application built with React.js, Ant Design, and Firebase, 
+                   featuring real-time data synchronization using react-firebase-hooks for a smooth and responsive user experience.
+                </p>
+                <div>
+                
+                  <FaReact />
+                  <SiAntdesign />
+                  <SiFirebase />
+                </div>
+                <div>
+                  <a
+                    href="https://fintrackr-finance-tracker.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      See this Live
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/vedantkherade/FinTrackr"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      View Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
@@ -125,6 +175,7 @@ export const Projects = () => {
               </div>
             </div>
           </div>
+
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
