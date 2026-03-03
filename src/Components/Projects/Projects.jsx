@@ -4,6 +4,7 @@ import weather_img from "../../assets/weather-app.png";
 import education_img from "../../assets/education-website.png";
 import spotify_img from "../../assets/spotify-clone.png";
 import FinTrackr from "../../assets/FinTrackr.png";
+import cryptopulse from "../../assets/cryptopulse.png";
 import { FaReact, FaHardHat } from "react-icons/fa";
 import {
   SiBlockchaindotcom,
@@ -20,8 +21,11 @@ import {
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
+  SiFramer,
   SiAntdesign,
   SiFirebase,
+  SiCss3,
+  SiChartdotjs
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { VscJson } from "react-icons/vsc";
@@ -32,25 +36,21 @@ export const Projects = () => {
       <div className="section">
         <h2 className="section__title different">Projects</h2>
         <div className="allProjects">
-
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
-                    src={FinTrackr}
-                    alt="FinTrackr-img"
-                  />
+                  <img src={FinTrackr} alt="FinTrackr-img" />
                 </div>
               </div>
               <div className="project_information">
                 <h2>FinTrackr</h2>
                 <p>
-                   FinTrackr is a user-friendly personal finance management application built with React.js, Ant Design, and Firebase, 
-                   featuring real-time data synchronization using react-firebase-hooks for a smooth and responsive user experience.
+                  FinTrackr is a user-friendly personal finance management
+                  application built with React.js, Ant Design, and Firebase,
+                  featuring real-time data synchronization.
                 </p>
                 <div>
-                
                   <FaReact />
                   <SiAntdesign />
                   <SiFirebase />
@@ -78,24 +78,64 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          
-          
+
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
-                    src={weather_img}
-                    alt="Weather-img"
-                  />
+                  <img src={cryptopulse} alt="cryptopulse-img" />
+                </div>
+              </div>
+              <div className="project_information">
+                <h2>CryptoPulse</h2>
+                <p>
+                  A modern crypto monitoring platform powered by React, Axios,
+                  Framer Motion, and Chart.js featuring real-time updates and
+                  personalized tracking.
+                </p>
+                <div>
+                  <FaReact />
+                  <SiMaterialui />
+                  <SiFramer />
+                  <SiChartdotjs />
+                </div>
+                <div>
+                  <a
+                    href="https://cryptopulse-live.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      See this Live
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/vedantkherade/CryptoPulse"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      View Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="projects_container" data-aos="fade-right">
+            <div className="project">
+              <div className="project_videocontainer">
+                <div>
+                  <img src={weather_img} alt="Weather-img" />
                 </div>
               </div>
               <div className="project_information">
                 <h2>Weather Dashboard</h2>
                 <p>
-                An interactive weather dashboard web application
-                that provides real-time weather updates including temperature, humidity, current weather information,
-                wind speed and forecasts.
+                  An interactive weather dashboard web application that provides
+                  real-time weather updates including temperature, humidity,
+                  current weather information, wind speed and forecasts.
                 </p>
                 <div>
                   <DiCss3 />
@@ -126,24 +166,20 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          
-          
+
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
-                    src={education_img}
-                    alt="Education-website"
-                  />
+                  <img src={education_img} alt="Education-website" />
                 </div>
               </div>
               <div className="project_information">
                 <h2>Education Website</h2>
                 <p>
-                A dynamic, user-friendly education website designed to offer 
-                interactive learning experiences for students, featuring admin 
-                functionalities for course creation, editing, and deletion.
+                  A dynamic, user-friendly education website designed to offer
+                  interactive learning experiences for students, featuring admin
+                  functionalities for course creation, editing, and deletion.
                 </p>
                 <div>
                   <DiCss3 />
@@ -153,11 +189,7 @@ export const Projects = () => {
                   <SiMysql />
                 </div>
                 <div>
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="" target="_blank" rel="noreferrer">
                     <span type="button" className="btns onbt onbt">
                       See this Live
                     </span>
@@ -176,21 +208,18 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="projects_container" data-aos="fade-right">
+          {/* <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
-                    src={spotify_img}
-                    alt="spoify-Clone"
-                  />
+                  <img src={spotify_img} alt="spoify-Clone" />
                 </div>
               </div>
               <div className="project_information">
                 <h2>Spotify Clone</h2>
                 <p>
-                  Spotify is a music streaming web application that allows 
-                  users to stream and discover music seamlessly. 
+                  Spotify is a music streaming web application that allows users
+                  to stream and discover music seamlessly.
                 </p>
                 <div>
                   <DiCss3 />
@@ -219,10 +248,9 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      
     </>
   );
 };

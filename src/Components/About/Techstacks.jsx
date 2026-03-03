@@ -11,7 +11,9 @@ import {
   SiPhp,
   SiMysql,
   SiNetlify,
-  SiFigma
+  SiFigma,
+  SiFirebase
+
 } from "react-icons/si";
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { SiJavascript, SiHeroku } from "react-icons/si";
@@ -64,8 +66,8 @@ export const Techstacks = () => {
             <h5>Bootstrap</h5>
           </div>
           <div>
-            <FaAws />
-            <h5>AWS</h5>
+            <SiFirebase />
+            <h5>Firebase</h5>
           </div>
           <div>
             <SiTailwindcss />
