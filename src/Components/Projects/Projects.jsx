@@ -5,6 +5,7 @@ import education_img from "../../assets/education-website.png";
 import spotify_img from "../../assets/spotify-clone.png";
 import FinTrackr from "../../assets/FinTrackr.png";
 import cryptopulse from "../../assets/cryptopulse.png";
+import Spendsync from "../../assets/Spendsync.png"
 import { FaReact, FaHardHat } from "react-icons/fa";
 import {
   SiBlockchaindotcom,
@@ -40,15 +41,101 @@ export const Projects = () => {
             <div className="project">
               <div className="project_videocontainer">
                 <div>
+                  <img src={Spendsync} alt="FinTrackr-img" />
+                </div>
+              </div>
+              <div className="project_information">
+                <h2>Spendsync</h2>
+                <p>
+                   Spendsync is a full-stack finance dashboard to track income, expenses, 
+                   and savings with interactive charts, analytics, and recent transactions.
+                </p>
+                <div>
+                  <FaReact />
+                  <SiNodedotjs/>
+                  <SiExpress/>
+                  <SiMongodb/>
+                  <SiTailwindcss/>
+                </div>
+                <div>
+                  <a
+                    href="https://spendsync-1wix.onrender.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      See this Live
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/vedantkherade/SpendSync"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      View Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="projects_container" data-aos="fade-right">
+            <div className="project">
+              <div className="project_videocontainer">
+                <div>
+                  <img src={cryptopulse} alt="cryptopulse-img" />
+                </div>
+              </div>
+              <div className="project_information">
+                <h2>CryptoPulse</h2>
+                <p>
+                 CryptoPulse is a crypto monitoring platform to track live market prices 
+                 in real-time with charts, analytics, and recent market trends and insights data analysis.
+                </p>
+                <div>
+                  <FaReact />
+                  <SiMaterialui />
+                  <SiFramer />
+                  <SiChartdotjs />
+                </div>
+                <div>
+                  <a
+                    href="https://cryptopulse-live.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      See this Live
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/vedantkherade/CryptoPulse"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      View Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div className="projects_container" data-aos="fade-right">
+            <div className="project">
+              <div className="project_videocontainer">
+                <div>
                   <img src={FinTrackr} alt="FinTrackr-img" />
                 </div>
               </div>
               <div className="project_information">
                 <h2>FinTrackr</h2>
                 <p>
-                  FinTrackr is a user-friendly personal finance management
-                  application built with React.js, Ant Design, and Firebase,
-                  featuring real-time data synchronization.
+                  FinTrackr is a personal finance management app built with React.js, 
+                  Ant Design, and Firebase, with real-time data synchronization.
                 </p>
                 <div>
                   <FaReact />
@@ -83,59 +170,14 @@ export const Projects = () => {
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img src={cryptopulse} alt="cryptopulse-img" />
-                </div>
-              </div>
-              <div className="project_information">
-                <h2>CryptoPulse</h2>
-                <p>
-                  A modern crypto monitoring platform powered by React, Axios,
-                  Framer Motion, and Chart.js featuring real-time updates and
-                  personalized tracking.
-                </p>
-                <div>
-                  <FaReact />
-                  <SiMaterialui />
-                  <SiFramer />
-                  <SiChartdotjs />
-                </div>
-                <div>
-                  <a
-                    href="https://cryptopulse-live.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span type="button" className="btns onbt">
-                      See this Live
-                    </span>
-                  </a>
-                  <a
-                    href="https://github.com/vedantkherade/CryptoPulse"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span type="button" className="btns onbt">
-                      View Code
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="projects_container" data-aos="fade-right">
-            <div className="project">
-              <div className="project_videocontainer">
-                <div>
                   <img src={weather_img} alt="Weather-img" />
                 </div>
               </div>
               <div className="project_information">
                 <h2>Weather Dashboard</h2>
                 <p>
-                  An interactive weather dashboard web application that provides
-                  real-time weather updates including temperature, humidity,
-                  current weather information, wind speed and forecasts.
+                  An interactive weather dashboard that provides real-time temperature, 
+                  humidity, wind speed, current conditions, and weather forecasts.
                 </p>
                 <div>
                   <DiCss3 />
@@ -177,9 +219,8 @@ export const Projects = () => {
               <div className="project_information">
                 <h2>Education Website</h2>
                 <p>
-                  A dynamic, user-friendly education website designed to offer
-                  interactive learning experiences for students, featuring admin
-                  functionalities for course creation, editing, and deletion.
+                  A dynamic education platform offering interactive learning for students 
+                  with admin features for course creation, editing, and management.
                 </p>
                 <div>
                   <DiCss3 />
@@ -208,7 +249,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          {/* <div className="projects_container" data-aos="fade-right">
+          <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
@@ -248,7 +289,7 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>

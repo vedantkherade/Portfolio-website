@@ -12,7 +12,7 @@ export const Header = () => {
       <header className={"header center " + themename}>
         <h3>
           <a href="#home" className="link">
-           Vedant
+           Vedant.
           </a>
         </h3>
         <Navbar />
